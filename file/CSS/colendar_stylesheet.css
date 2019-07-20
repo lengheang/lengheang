@@ -1,0 +1,29 @@
+.color{
+    background-color: silver;
+}
+#bon1{
+    background-image: url('/image/lonely-man-app.jpg');
+    width: 5px;
+    height: 5px;
+}
+#bon2{
+    background-image: url('/image/maewphikachu.jpg');
+    width: 2px;
+    height: 2px;
+}
+#bon3{
+    background-image: url('/image/5.jpg');
+    background-size: contain;
+}
+ td{
+     width: 100px;
+     height: 100px;
+     vertical-align: top;
+ }
+ .bgc{
+     background-color: orange;
+ }
+.day3{
+    border: 1px solid red;
+
+}

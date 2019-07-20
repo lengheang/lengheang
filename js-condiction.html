@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="frm">
+        <input type="text" id="day" placeholder="please input number">
+        <select name="" id="colorSelector">
+            <option value="red">RED</option>
+            <option value="yellow">YELLOW</option>
+            <option value="blue">BLUE</option>
+            <option value="orange">ORANGE</option>
+            <option value="green">GREEN</option>
+            <option value="brown">BROWN</option>
+            <option value="pink">PINK</option>
+        </select>
+        <input type="submit">
+    </form>
+    <h1 align="center" id="heading"></h1>
+    <script>
+        var frm = document.getElementById('frm');
+        var h1 = documemnt.getElementById('heading');
+        frm.addEventListener('submit', function (e) {
+            e.preventDefault()
+            
+            var nDay = document.getElementById('day').value;
+            var selectColor = document.getElementById('colorSelector').value;
+            console.log(nDay)
+            checkOptioninput(nDay, selectColor)
+        })
+
+        function checkOptioninput(nDays, colorSelector) {
+            if (nDay == '0' && selectColor == 'red') {
+                document.bgColor = selectColor
+                h1.innerHTML = 'TODAY IS SUNDAY'
+            }
+            else if (nDay == '1' && selectColor == 'yellow') {
+                document.bgColor = selectColor
+                h1.innerHTML = 'TODAY IS MONDAY'
+            }
+            else if (nDay == '2' && selectColor == 'blue') {
+                document.bgColor = selectColor
+                h1.innerHTML = 'TODAY IS TUESDAY'
+            }
+            else if (nDay == '3' && selectColor == 'orange') {
+                document.bgColor = selectColor
+                h1.innerHTML = 'TODAY IS WEDNESDAY'
+            }
+            else if (nDay == '4' && selectColor == 'green') {
+                document.bgColor = selectColor
+                h1.innerHTML = 'TODAY IS THURSDAY'
+            }
+            else if (nDay == '5' && selectColor == 'brown') {
+                document.bgColor = selectColor
+                h1.innerHTML = 'TODAY IS FRIDAY'
+            }
+            else if (nDay == '6' && selectColor == 'pink') {
+                document.bgColor = selectColor
+                h1.innerHTML = 'TODAY IS SATURDAY'
+            }
+            else {
+                document.bgColor = 'purple'
+                h1.innerHTML = 'TODAY IS YOUR DAY'
+            }
+        }
+
+    </script>
+</body>
+
+</html>
